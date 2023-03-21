@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>رساله للمطور </title>
+	  <link rel="stylesheet" href="textarea.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="wrapper">
+              <img src="namelogo.png" alt="wajehnilogo" class="topright" style="margin: 60px;">
+
+    <h2>شكاوى او اقتراحات</h2>
+    <textarea spellcheck="false" placeholder="اكتب رسالتك" required></textarea>
+    <ul class="b">
+    <button type="button"><span></span><a href="#"> ارسال</a></button>
+        <button type="button"><span></span><a href="homepage.html"> تراجع</a></button>
+
+  <script>
+    const textarea = document.querySelector("textarea");
+    textarea.addEventListener("keyup", e => {
+      textarea.style.height = "63px";
+      let scHeight = e.target.scrollHeight;
+      textarea.style.height = `${scHeight}px`;
+    });
+  </script>
+</html>
+<!--https://www.codingnepalweb.com/auto-resize-textarea-html-css-javascript/ -->
+

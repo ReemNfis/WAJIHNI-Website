@@ -1,0 +1,103 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+    text-decoration: none;
+
+
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:  #9c958c;
+}
+::selection{
+  color: #74584b;
+  background: #74584b;
+}
+.wrapper{
+  width: 470px;
+  background: #ffffff54;
+  border-radius: 5px;
+  padding: 25px 25px 30px;
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.06);
+}
+.wrapper h2{
+  color: #74584b;
+  font-size: 28px;
+  text-align: center;
+}
+.wrapper textarea{
+  width: 100%;
+  resize: none;
+  height: 59px;
+  outline: none;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  max-height: 330px;
+  caret-color: #74584b;
+  border: 1px solid #bfbfbf;
+}
+textarea::placeholder{
+  color: #74584b;
+}
+textarea:is(:focus, :valid){
+  padding: 14px;
+  border: 2px solid #74584b;
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+button {
+  width: 150px;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #74584b;
+  background: transparent;
+  color: #74584b;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex-box;
+  align-items: center;
+
+
+
+}
+
+span {
+  background: #74584b;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+
+}
+
+button:hover {
+  border: none;
+}
+a{
+  color: #74584b;
+  text-decoration: none;
+}
+textarea{
+  background-color: #ffffff54;
+}
