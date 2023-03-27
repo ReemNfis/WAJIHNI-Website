@@ -1,16 +1,25 @@
+const form = document.getElementById("submitForm");
+const UserName = document.getElementById("usernamee").value;
+const Password = document.getElementById("passwordd").value;
+const email = "editor@imamu.com";
+const pass = "helloworld1";
+function validateForm () {
+      if (UserName == "" || UserName == null) {
+          alert("يرجى إدخال البريد الإلكتروني");
+          return;
+      }
+      if (Password == "" || Password == null) {
+          alert("يرجى إدخال كلمة المرور");
+          return;
 
-function validateForm() {
-  "use strict";
-
-  var UserName = document.getElementById("usernamee").value;
-  var email = "renad@imamu.com";
-  var Password = document.getElementById("passwordd").value;
-  var pass = "helloworld1";
-
-  if (UserName == email && Password == pass) {
-    window.location.href = "www.google.com";
-  } else {
-    alert("UserName and/or Password Do Not Match");
-    return false;
-  }
+      }
+      if (UserName != email || Password != pass) {
+          alert("اسم المستخدم و/أو كلمة المرور غير صحيحة");
+          return;
+      }
+      if (UserName == email && Password == pass) {
+        alert("form submitted successfully")
+		return true;
+      }
 }
+
