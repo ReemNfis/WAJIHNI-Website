@@ -1,11 +1,18 @@
-function auth() {
+
+
+function validation() {
+  sessionStorage.setItem(
+    "username",
+    document.getElementById("usernamee").value
+  );
   var email = document.getElementById("usernamee").value;
   var password = document.getElementById("passwordd").value;
-  if (email.value == "admin@imamu.com" && password.value == "admin123") {
+  if (email == "admin@imamu.com" && password == "admin123") {
     window.location.assign("editorhomepage.html");
-    alert("Login Successfully ");
+    alert("تم تسجيل الدخول بنجاح ");
   } else {
-    alert("Invalid Information ");
+    alert("الرجاء التأكد من اسم المستخدم وكلمة المرور");
     return;
   }
 }
+
