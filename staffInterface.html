@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
+       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+       <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Muli'>
+       <title>واجهة المشرفة</title>
+       <link rel="stylesheet" type="text/css" href="staffInterface.css">
+       <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet"></link>
+</head>
+
+<body>
+      
+  <div class="banner">
+        
+ 	  <div class="back-img"></div>
+
+      <div class="navbar">
+        <img src="cs-imamu-logo-removebg-preview.png"  class="logo" alt="imamu ccis">
+
+        <div class="action">
+          <div class="profile" onclick="menuToggle();">
+            <img src="user.png">
+          </div>
+          <div class="menu">
+            <h3>مرحبًا</h3>
+            <ul>
+              <li><img src="logout.png"><a href="#">تعديل</a></li>
+              <li><img src="edit.png"><a href="homepage.html">تسجيل الخروج</a></li>
+            </ul>
+          </div>
+        </div>
+   
+      <script>
+        function menuToggle(){
+          const toggleMenu = document.querySelector('.menu');
+          toggleMenu.classList.toggle('active')
+        } 
+      </script>
+     
+  
+      </div>
+
+  </div>
+
+   
+
+
+  <div class="content">
+    <h1> اﺧﺘﺎﺭ العملية اﻟﻤﺮاﺩﻩ  </h1>
+      <p>
+        <button type="button"  ><span></span>
+          <a href="search.html" style="color: #fff;"> التعديل </a></button>
+        <button type="button" style="color: #fff;"><span></span>
+          <a href="search.html" style="color: #fff;"> الحذف </a></button>
+        <button type="button" style="color: #fff;"><span></span>
+          <a href="search.html" style="color: #fff;"> اﻟطباعة </a></button>
+
+     
+  </div>
+
+
+ 
+</body>
+
+</html>
