@@ -34,13 +34,34 @@
               <h4>يمكنك البحث بكتابه رقم الدور او اسم العضو او الوكالة التي تبحث عنها. يمكنك ايضا البحث عن طريق رقم المكتب.</h4>
        </div>
        
-       <form action="">              
+       <!-- <form action="">              
               <input type="string" id="amount" required>
               <i class="fa fa-search">
               </i>
               </form>
               <button class="btn btn-light rounded-circle" id="myButton" style="display:none;" onclick="Search()">بحث</button>
 <input type="string" id="amount" required>
+<script>
+  const amountInput = document.getElementById("amount");
+  const myButton = document.getElementById("myButton");
+  amountInput.addEventListener("input", function() {
+    if (amountInput.value !== "") {
+      myButton.style.display = "block";
+    } else {
+      myButton.style.display = "none";
+    }
+  });
+</script> -->
+
+<form action="">
+  <input type="string" id="amount" required>
+  <i class="fa fa-search" onclick="Search()"></i>
+</form>
+<button class="btn btn-light rounded-circle" id="myButton" style="display:none;" onclick="Search()">بحث</button>
+<input type="string" id="amount" required>
+
+
+
 <script>
   const amountInput = document.getElementById("amount");
   const myButton = document.getElementById("myButton");
