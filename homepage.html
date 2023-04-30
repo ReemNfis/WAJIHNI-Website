@@ -2,6 +2,7 @@
 <html>
 <head>
        <meta content='maximum-scale=1.0, initial-scale=1.0, width=device-width' name='viewport'>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Muli'>
  <title>وجهني</title>
@@ -12,6 +13,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
 </link>
 </head>
@@ -31,10 +34,26 @@
               <h4>يمكنك البحث بكتابه رقم الدور او اسم العضو او الوكالة التي تبحث عنها. يمكنك ايضا البحث عن طريق رقم المكتب.</h4>
        </div>
        
-       <form action="">
-              <input type="search" required>
-              <i class="fa fa-search"></i>
+       <form action="">              
+              <input type="string" id="amount" required>
+              <i class="fa fa-search">
+              </i>
               </form>
+              <button class="btn btn-light rounded-circle" id="myButton" style="display:none;" onclick="Search()">بحث</button>
+<input type="string" id="amount" required>
+<script>
+  const amountInput = document.getElementById("amount");
+  const myButton = document.getElementById("myButton");
+  amountInput.addEventListener("input", function() {
+    if (amountInput.value !== "") {
+      myButton.style.display = "block";
+    } else {
+      myButton.style.display = "none";
+    }
+  });
+</script>
+          
+  
 </body>
 
 </html>
