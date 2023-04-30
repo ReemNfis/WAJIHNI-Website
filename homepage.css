@@ -149,6 +149,9 @@ a:hover{
 }
 
 @media screen and (max-width: 576px) and (max-width: 900px){
+    .translate-middle{
+margin-bottom: 15%;
+    }
 
     #myButton {
         font-family: 'El Messiri', sans-serif !important;
