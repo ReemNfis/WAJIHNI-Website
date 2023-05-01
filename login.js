@@ -1,5 +1,5 @@
 
-
+// made attemps litmitless since there is no critical information
 function validation() {
   sessionStorage.setItem(
     "username",
