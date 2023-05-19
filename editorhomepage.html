@@ -25,9 +25,34 @@
                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                      <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                    </svg>تسجيل الخروج</a>             
-       </div>
-       
+                   </div>
 
+                   <div class="translate-middle">
+                    <h4>ابحث عن المكتب الذي ترغب بتعديل بياناته </h4> 
+                    <h4>للبحث ادخل احد الخيارات: رقم المكتب، اسم عضو هيئة التدريس، اسم المكتب. </h4>
+                   </div>
+                   
+                   <form action="">
+                    <input type="string" id="amount" required>
+                    <i class="fa fa-search" onclick="Search()"></i>
+                  </form>
+                  <button class="btn btn-light rounded-circle" id="myButton" style="display:none;" onclick="Search()">بحث</button>
+                  <input type="string" id="amount" required>
+                  <div class="text-center">
+                    
+                  </div>
+                
+                  <script>
+                    const amountInput = document.getElementById("amount");
+                    const myButton = document.getElementById("myButton");
+                    amountInput.addEventListener("input", function() {
+                      if (amountInput.value !== "") {
+                        myButton.style.display = "block";
+                      } else {
+                        myButton.style.display = "none";
+                      }
+                    });
+                  </script>
 </body>
 
 </html>
