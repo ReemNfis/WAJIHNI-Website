@@ -39,7 +39,7 @@
   <input type="string" id="amount" required>
   <i class="fa fa-search" onclick="Search()"></i>
 </form>
-<button class="btn btn-light rounded-circle" id="myButton" style="display:none;" onclick="Search()">بحث</button>
+<button class="btn btn-light btn-sm" id="myButton" style="display:none;" onclick="Search()">بحث</button>
 <input type="string" id="amount" required>
 
 <script>
@@ -64,6 +64,13 @@
     
   </tbody>
 </table>
+
+
+<script>
+  function Search(){
+    window.location.assign("displayResult.html");
+  }
+</script>
 </body>
 
 </html>

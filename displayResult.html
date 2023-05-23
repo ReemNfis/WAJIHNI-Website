@@ -60,9 +60,11 @@
                   </div>
                 </div>
               </div>
-              <div class="px-5 py-4">
-                <button type="submit" class="btn btn-primary btn-block" id="btnE">عد لصفحة البحث</button>
-              </div>
+            </div>
+            <div class="px-5 py-4">
+              <button type="button" class="btn btn-primary btn-block" id="btnE" onclick="return redirect()">عد للصفحة الرئيسية</button>
+            </div>
+          </div>
             </div>
           </div>
         </div>
@@ -77,6 +79,10 @@
         }
       </style>
 
-
+<script>
+  function redirect(){
+    window.location.assign("homepage.html");
+  }
+</script>
 </body>
 </html>

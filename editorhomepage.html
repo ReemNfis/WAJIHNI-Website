@@ -27,32 +27,110 @@
                    </svg>تسجيل الخروج</a>             
                    </div>
 
-                   <div class="translate-middle">
-                    <h4>ابحث عن المكتب الذي ترغب بتعديل بياناته </h4> 
-                    <h4>للبحث ادخل احد الخيارات: رقم المكتب، اسم عضو هيئة التدريس، اسم المكتب. </h4>
-                   </div>
+                  
                    
-                   <form action="">
-                    <input type="string" id="amount" required>
-                    <i class="fa fa-search" onclick="Search()"></i>
-                  </form>
-                  <button class="btn btn-light rounded-circle" id="myButton" style="display:none;" onclick="Search()">بحث</button>
-                  <input type="string" id="amount" required>
-                  <div class="text-center">
+                   <div class="translate-middle" > 
+                    <h3> ابحث عن المكتب الذي ترغب بتعديل بياناته </h3>
+                    <h4>للبحث ادخل احد الخيارات: رقم المكتب، اسم عضو هيئة التدريس، اسم المكتب. </h4>
+
+
+                    <div class="position-fixed text-center" style="text-align: center; margin-left: 43%;margin-top: 22%;" >
+                      <div class="px-5 py-4 " >
+                        <button type="button" class="btn btn-primary btn-group-sm align-items-center" id="btnE" onclick="return redirectadd()">اضافه مكتب جديد  </button>
+                      </div>
                     
-                  </div>
-                
-                  <script>
-                    const amountInput = document.getElementById("amount");
-                    const myButton = document.getElementById("myButton");
-                    amountInput.addEventListener("input", function() {
-                      if (amountInput.value !== "") {
-                        myButton.style.display = "block";
-                      } else {
-                        myButton.style.display = "none";
-                      }
-                    });
-                  </script>
+                      <div class="px-5 py-4 ">
+                        <button type="button" class="btn btn-primary btn-group-sm align-items-center" id="btnE" onclick="return redirectprint()">طباعة المكاتب  </button>
+                      </div>
+                    </div>
+                    
+             </div>
+             
+      
+      
+      <form action="">
+        <input type="string" id="amount" required>
+        <i class="fa fa-search" onclick="Search()"></i>
+      </form>
+      <button class="btn btn-light btn-sm" id="myButton" style="display:none;" onclick="redirectResult()()">بحث</button>
+      <input type="string" id="amount" required>
+      
+      <script>
+        const amountInput = document.getElementById("amount");
+        const myButton = document.getElementById("myButton");
+        amountInput.addEventListener("input", function() {
+          if (amountInput.value !== "") {
+            myButton.style.display = "block";
+          } else {
+            myButton.style.display = "none";
+          }
+        });
+      </script>
+            
+      
+      <input type="file" id="excel_file" />
+      <table class="table">
+        <thead class="table-dark">
+          
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+      
+                  
+
+
+
+
+
+
+
+
+<style>
+  body{
+      font-family: 'El Messiri', sans-serif !important;
+      background: url(resultBackground.jpeg);
+  }
+  #btnE{
+      background: #74584b !important;
+border: #74584b !important;
+position: absolute;
+
+  
+  }
+  #btnEe{
+      background: #74584b !important;
+border: #74584b !important;
+position: absolute;
+
+
+  
+  }
+ 
+
+
+
+</style>
+
+
+<script>
+  function redirectprint(){
+    window.location.assign("print.html");
+  }
+</script>
+<script>
+  function redirectadd(){
+    window.location.assign("addOffice.html");
+  }
+</script>
+
+<script>
+  function redirectResult(){
+    window.location.assign("displayResultEditor.html");
+  }
+</script>
+
 </body>
 
 </html>

@@ -73,7 +73,7 @@
                 </div>
               </div>
               <div class="px-5 py-4">
-                <button type="submit" class="btn btn-primary btn-block" id="btnE">عد لصفحة البحث</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="return redirect()" id="btnE">عد لصفحة البحث</button>
               </div>
             </div>
             
@@ -99,6 +99,14 @@
         document.getElementById("gotoeditpage").onclick = function () {
             location.href = "editOrDeleteOffice.html";
         };
+
     </script>
+
+<script>
+  function redirect(){
+    window.location.assign("editorhomepage.html");
+  }
+</script>
+
 </body>
 </html>
